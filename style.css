@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+.box {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.box > h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+#input {
+  width: 60%;
+  height: 100px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 28px;
+  padding: 20px;
+  display: inline-block;
+  margin-top: 60px;
+}
+.box > .show-keycode {
+  font-size: 100px;
+}
+.box > .items {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.box > .items > .item {
+  width: 19%;
+  height: 80px;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.box > .items > .item:hover {
+  transform: scale(1.1);
+}
+.box > .items > .item > .item-title {
+  background-color: #93c5fd;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.box > .items > .item > .item-content {
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
